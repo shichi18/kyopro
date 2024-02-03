@@ -6,3 +6,4 @@
 - CLion
 - C++20
 - gcc (Homebrew GCC 13.2.0) 13.2.0
+- clang-format

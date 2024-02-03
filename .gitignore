@@ -1,6 +1,7 @@
 # プロジェクトの除外パス
 /cmake-build-debug/
 /cmake-build-debug-gcc/
+.idea
 
 # Created by https://www.toptal.com/developers/gitignore/api/clion,cmake,c++
 # Edit at https://www.toptal.com/developers/gitignore?templates=clion,cmake,c++
