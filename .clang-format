@@ -1,9 +1,10 @@
 ---
 Language:        Cpp
-# BasedOnStyle:  LLVM
+BasedOnStyle:  LLVM
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: None
+AlignTrailingComments: false
 AlignConsecutiveAssignments:
   Enabled:         false
   AcrossEmptyLines: false
