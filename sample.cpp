@@ -21,13 +21,9 @@ typedef vector<ll> vl;
 #define COUT_L(s) cout << s << endl
 #define COUT(s) cout << s
 #define LEN(v) ll(v.size())
+#define YN_COUT_L(flag, up) COUT_L((up ? (flag ? "YES" : "NO") : (flag ? "Yes" : "No")))
 
 int main() {
   int N;
   cin >> N;
-
-  vl A(N);
-
-  REP(i, N) cin >> A[i];
-  COUT_L(A.back());
 }
