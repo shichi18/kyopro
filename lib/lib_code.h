@@ -6,7 +6,6 @@
 #define KYOPRO_LIB_CODE_H
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 typedef long long ll;
@@ -17,6 +16,8 @@ typedef vector<string_view> vsv;
 typedef vector<char> vc;
 typedef vector<double> vd;
 typedef vector<ll> vl;
+
+typedef set<string> sts;
 
 #define FOR(i, a, b) for (ll i = (a); i < ll(b); i++)
 #define REP(i, n) FOR(i, 0, n)

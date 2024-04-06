@@ -1,21 +1,18 @@
 //
 // Created by shichi on 2024/04/06.
+// 部分文字列を全通り取得する
 //
 
-#include <bits/stdc++.h>
 #include "lib_code.h"
 
-vs getAllSubstrings(const basic_string<char> &str) {
-  vs substrings;
-  int length = LEN(str);
+sts getAllSubstrings(const string &s) {
+  set<string> st;
 
-  for (int start = 0; start < length; start++) {
-    for (int end = start; end < length; end++) {
-      substrings.push_back(str.substr(start, end - start + 1));
+  for (int i = 0; i < s.size(); i++) {
+    for (int j = 1; i + j <= s.size(); j++) {
+      st.insert(s.substr(i, j));
     }
   }
 
-  UNIQUE(substrings);
-
-  return substrings;
+  return st;
 }
