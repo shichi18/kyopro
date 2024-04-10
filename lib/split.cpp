@@ -3,11 +3,12 @@
 // 文字列分割
 //
 
-#include "lib_code.h"
+#include <bits/stdc++.h>
+using namespace std;
 
 // s: 文字列, delimiter: 分割区切り文字
-vs split(const string &s, char delimiter) {
-  vs tokens;
+vector<string> split(const string &s, char delimiter) {
+  vector<string> tokens;
   string token;
   istringstream tokenStream(s);
 
@@ -19,8 +20,8 @@ vs split(const string &s, char delimiter) {
 }
 
 // s: 文字列, delimiter: 分割区切り文字
-vsv split_speed(const string_view &s, char delimiter) {
-  vsv tokens;
+vector<string_view> split_speed(const string_view &s, char delimiter) {
+  vector<string_view> tokens;
   size_t start = 0;
   size_t end = s.find(delimiter);
 

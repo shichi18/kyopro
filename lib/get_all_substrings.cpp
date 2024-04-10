@@ -3,9 +3,10 @@
 // 部分文字列を全通り取得する
 //
 
-#include "lib_code.h"
+#include <bits/stdc++.h>
+using namespace std;
 
-sts getAllSubstrings(const string &s) {
+set<string> get_all_substrings(const string &s) {
   set<string> st;
 
   for (int i = 0; i < s.size(); i++) {
